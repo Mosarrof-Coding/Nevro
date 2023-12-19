@@ -1,0 +1,62 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    padding-top: 40px;
+    padding-bottom: 26px;
+    background-color: #fafafb;
+  }
+  svg {
+    min-width: 26px !important;
+    aspect-ratio: 1/1 !important;
+  }
+  .optionsLi.active {
+    background: url(../assets/Images/bgImgLi.svg);
+    background-position: left;
+    background-repeat: no-repeat;
+  }
+  .optionsLi:hover {
+    background: url(../assets/Images/bgImgLi.svg);
+    background-position: left;
+    background-repeat: no-repeat;
+  }
+  .checkbox svg {
+    cursor: pointer;
+  }
+  .checkbox svg path {
+    stroke: #aeaeae;
+  }
+  .checkbox svg .svgPath.active {
+    stroke: black;
+  }
+  .checkbox svg .pathBullete.active {
+    fill: black;
+  }
+  .checkbox svg:hover .svgPath {
+    stroke: black;
+  }
+  .checkbox svg:hover .pathBullete {
+    fill: black;
+  }
+  .popupBox .popup {
+    display: none;
+  }
+  .popupBox:hover .popup {
+    display: block;
+  }
+  .patientInner {
+    border-radius: 28px;
+    background: url(../assets/Images/gradientBg.svg);
+  }
+  /* togler  */
+  .toggler {
+    right: 0 !important;
+  }
+}

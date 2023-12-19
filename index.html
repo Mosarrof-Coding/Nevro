@@ -1,0 +1,1231 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;800;900&family=Nunito:wght@200;300;400;500;600;700;800;900;1000&family=Roboto:wght@100;300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./dist/output.css" />
+  </head>
+  <body class="sm:px-[12px] md:px-[20px] xl:pl-[52px] transition-all">
+    <header></header>
+    <main>
+      <section>
+        <div class="mainDiv flex gap-[20px] bg-dark10">
+          <aside
+            class="sidebar hidden lg:block min-w-[320px] max-w-fit bg-white py-[12px] rounded-tl-[17px] rounded-bl-[17px] -left-full top-0 h-full overflow-y-scroll lg:overflow-y-auto transition-all"
+          >
+            <div class="logo pl-[28px] pb-1 bg-white">
+              <svg
+                width="196"
+                height="119"
+                viewBox="0 0 196 119"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+              >
+                <g filter="url(#filter0_d_331_287)">
+                  <rect
+                    x="4"
+                    width="187.386"
+                    height="105.624"
+                    fill="url(#pattern0)"
+                    shape-rendering="crispEdges"
+                  />
+                </g>
+                <defs>
+                  <filter
+                    id="filter0_d_331_287"
+                    x="0"
+                    y="0"
+                    width="195.386"
+                    height="118.624"
+                    filterUnits="userSpaceOnUse"
+                    color-interpolation-filters="sRGB"
+                  >
+                    <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                    <feColorMatrix
+                      in="SourceAlpha"
+                      type="matrix"
+                      values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                      result="hardAlpha"
+                    />
+                    <feOffset dy="9" />
+                    <feGaussianBlur stdDeviation="2" />
+                    <feComposite in2="hardAlpha" operator="out" />
+                    <feColorMatrix
+                      type="matrix"
+                      values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.03 0"
+                    />
+                    <feBlend
+                      mode="normal"
+                      in2="BackgroundImageFix"
+                      result="effect1_dropShadow_331_287"
+                    />
+                    <feBlend
+                      mode="normal"
+                      in="SourceGraphic"
+                      in2="effect1_dropShadow_331_287"
+                      result="shape"
+                    />
+                  </filter>
+                  <pattern
+                    id="pattern0"
+                    patternContentUnits="objectBoundingBox"
+                    width="1"
+                    height="1"
+                  >
+                    <use
+                      xlink:href="#image0_331_287"
+                      transform="matrix(0.00308016 0 0 0.00546448 -0.00822696 0)"
+                    />
+                  </pattern>
+                  <image
+                    id="image0_331_287"
+                    width="330"
+                    height="183"
+                    xlink:href="data:image/png;base64,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"
+                  />
+                </defs>
+              </svg>
+            </div>
+            <ul class="pb-[24px]">
+              <li
+                class="optionsLi active flex items-center gap-[14px] text-dark font-[Roboto] text-[20px] font-normal leading-[normal] py-[12px] pl-[15px] hover:text-dpBlue hover:font-bold"
+              >
+                <span>
+                  <img src="./assets/Images/userIcon.svg" alt="" />
+                </span>
+                Patients Lists
+              </li>
+              <li
+                class="optionsLi flex items-center gap-[14px] text-dark font-[Roboto] text-[20px] font-normal leading-[normal] py-[12px] pl-[15px] hover:text-dpBlue hover:font-bold"
+              >
+                <span>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="20"
+                    viewBox="0 0 20 20"
+                    fill="none"
+                  >
+                    <path
+                      d="M4.16667 5.38462C4.16667 6.8127 4.78125 8.1823 5.87521 9.19211C6.96917 10.2019 8.4529 10.7692 10 10.7692C11.5471 10.7692 13.0308 10.2019 14.1248 9.19211C15.2188 8.1823 15.8333 6.8127 15.8333 5.38462C15.8333 3.95653 15.2188 2.58693 14.1248 1.57712C13.0308 0.567306 11.5471 0 10 0C8.4529 0 6.96917 0.567306 5.87521 1.57712C4.78125 2.58693 4.16667 3.95653 4.16667 5.38462ZM18.3333 20H0.833333C0.61232 20 0.400358 19.919 0.244078 19.7747C0.0877975 19.6304 0 19.4348 0 19.2308V16.9231C0 15.903 0.438987 14.9247 1.22039 14.2034C2.00179 13.4821 3.0616 13.0769 4.16667 13.0769H15.8333C16.9384 13.0769 17.9982 13.4821 18.7796 14.2034C19.561 14.9247 20 15.903 20 16.9231V19.2308C20 19.4348 19.9122 19.6304 19.7559 19.7747C19.5996 19.919 19.3877 20 19.1667 20H18.3333Z"
+                      fill="black"
+                    />
+                  </svg>
+                </span>
+                System Users
+              </li>
+              <li
+                class="optionsLi flex items-center gap-[14px] text-dark font-[Roboto] text-[20px] font-normal leading-[normal] py-[12px] pl-[15px] hover:text-dpBlue hover:font-bold"
+              >
+                <span>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="20"
+                    viewBox="0 0 20 20"
+                    fill="none"
+                  >
+                    <path
+                      d="M9.00002 10.0003V11.0003H8.00004C7.73483 11.0003 7.48048 11.1056 7.29295 11.2932C7.10542 11.4807 7.00006 11.735 7.00006 12.0002C7.00006 12.2655 7.10542 12.5198 7.29295 12.7073C7.48048 12.8949 7.73483 13.0002 8.00004 13.0002H9.00002V14.0002C9.00002 14.2654 9.10538 14.5197 9.29291 14.7073C9.48044 14.8948 9.73479 15.0002 10 15.0002C10.2652 15.0002 10.5196 14.8948 10.7071 14.7073C10.8946 14.5197 11 14.2654 11 14.0002V13.0002H12C12.2652 13.0002 12.5195 12.8949 12.7071 12.7073C12.8946 12.5198 12.9999 12.2655 12.9999 12.0002C12.9999 11.735 12.8946 11.4807 12.7071 11.2932C12.5195 11.1056 12.2652 11.0003 12 11.0003H11V10.0003C11 9.7351 10.8946 9.48075 10.7071 9.29322C10.5196 9.10569 10.2652 9.00033 10 9.00033C9.73479 9.00033 9.48044 9.10569 9.29291 9.29322C9.10538 9.48075 9.00002 9.7351 9.00002 10.0003ZM19.6638 8.25236L10.664 0.252598C10.4811 0.0898876 10.2448 0 10 0C9.7552 0 9.51892 0.0898876 9.33601 0.252598L0.336195 8.25236C0.137817 8.42845 0.0175195 8.67615 0.00176676 8.94094C-0.013986 9.20573 0.0760964 9.46594 0.252197 9.66431C0.428297 9.86269 0.67599 9.98299 0.940786 9.99874C1.20558 10.0145 1.46579 9.92441 1.66417 9.74831L2.00016 9.44932V19C2.00016 19.2652 2.10552 19.5196 2.29305 19.7071C2.48058 19.8946 2.73493 20 3.00014 20H16.9999C17.2651 20 17.5194 19.8946 17.707 19.7071C17.8945 19.5196 17.9998 19.2652 17.9998 19V9.44932L18.3358 9.74831C18.5342 9.92441 18.7944 10.0145 19.0592 9.99874C19.1903 9.99094 19.3186 9.95739 19.4368 9.90001C19.5549 9.84263 19.6606 9.76254 19.7478 9.66431C19.835 9.56609 19.902 9.45165 19.945 9.32753C19.9879 9.20342 20.006 9.07205 19.9982 8.94094C19.9904 8.80983 19.9569 8.68153 19.8995 8.56339C19.8421 8.44524 19.762 8.33955 19.6638 8.25236ZM15.9999 18.0001H4.00012V7.67137L10 2.33853L15.9999 7.67137V18.0001Z"
+                      fill="black"
+                    />
+                  </svg>
+                </span>
+                Clinic info
+              </li>
+            </ul>
+            <div class="line max-w-[90%] mx-auto border border-b-gray1"></div>
+            <ul class="py-[30px]">
+              <li
+                class="checkbox flex gap-[14px] pb-3 pl-[15px] text-dark font-[roboto] text-[20px] font-normal leading-[normal]"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                >
+                  <path
+                    class="svgPath active"
+                    d="M23.0459 12.0297C23.0459 18.3648 17.9915 23.4871 11.7729 23.4871C5.55437 23.4871 0.5 18.3648 0.5 12.0297C0.5 5.69456 5.55437 0.572266 11.7729 0.572266C17.9915 0.572266 23.0459 5.69456 23.0459 12.0297Z"
+                    stroke=""
+                  />
+                  <ellipse
+                    class="pathBullete active"
+                    class="pathBullete"
+                    cx="11.7731"
+                    cy="11.9574"
+                    rx="7.49187"
+                    ry="7.60926"
+                    fill=""
+                  />
+                </svg>
+                Request Received (12)
+              </li>
+              <li
+                class="checkbox flex gap-[14px] pb-3 pl-[15px] text-dark font-[roboto] text-[20px] font-normal leading-[normal]"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                >
+                  <path
+                    class="svgPath"
+                    d="M23.0459 12.0297C23.0459 18.3648 17.9915 23.4871 11.7729 23.4871C5.55437 23.4871 0.5 18.3648 0.5 12.0297C0.5 5.69456 5.55437 0.572266 11.7729 0.572266C17.9915 0.572266 23.0459 5.69456 23.0459 12.0297Z"
+                    stroke=""
+                  />
+                  <ellipse
+                    class="pathBullete"
+                    cx="11.7731"
+                    cy="11.9574"
+                    rx="7.49187"
+                    ry="7.60926"
+                    fill=""
+                  />
+                </svg>
+                Preparing for Submission (9)
+              </li>
+              <li
+                class="checkbox flex gap-[14px] pb-3 pl-[15px] text-dark font-[roboto] text-[20px] font-normal leading-[normal]"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                >
+                  <path
+                    class="svgPath"
+                    d="M23.0459 12.0297C23.0459 18.3648 17.9915 23.4871 11.7729 23.4871C5.55437 23.4871 0.5 18.3648 0.5 12.0297C0.5 5.69456 5.55437 0.572266 11.7729 0.572266C17.9915 0.572266 23.0459 5.69456 23.0459 12.0297Z"
+                    stroke=""
+                  />
+                  <ellipse
+                    class="pathBullete"
+                    cx="11.7731"
+                    cy="11.9574"
+                    rx="7.49187"
+                    ry="7.60926"
+                    fill=""
+                  />
+                </svg>
+                On Hold (5)
+              </li>
+              <li
+                class="checkbox flex gap-[14px] pb-3 pl-[15px] text-dark font-[roboto] text-[20px] font-normal leading-[normal]"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                >
+                  <path
+                    class="svgPath"
+                    d="M23.0459 12.0297C23.0459 18.3648 17.9915 23.4871 11.7729 23.4871C5.55437 23.4871 0.5 18.3648 0.5 12.0297C0.5 5.69456 5.55437 0.572266 11.7729 0.572266C17.9915 0.572266 23.0459 5.69456 23.0459 12.0297Z"
+                    stroke=""
+                  />
+                  <ellipse
+                    class="pathBullete"
+                    cx="11.7731"
+                    cy="11.9574"
+                    rx="7.49187"
+                    ry="7.60926"
+                    fill=""
+                  />
+                </svg>
+                Missing Information (23)
+              </li>
+              <li
+                class="checkbox flex gap-[14px] pb-3 pl-[15px] text-dark font-[roboto] text-[20px] font-normal leading-[normal]"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                >
+                  <path
+                    class="svgPath"
+                    d="M23.0459 12.0297C23.0459 18.3648 17.9915 23.4871 11.7729 23.4871C5.55437 23.4871 0.5 18.3648 0.5 12.0297C0.5 5.69456 5.55437 0.572266 11.7729 0.572266C17.9915 0.572266 23.0459 5.69456 23.0459 12.0297Z"
+                    stroke=""
+                  />
+                  <ellipse
+                    class="pathBullete"
+                    cx="11.7731"
+                    cy="11.9574"
+                    rx="7.49187"
+                    ry="7.60926"
+                    fill=""
+                  />
+                </svg>
+                Prior Auth Submitted (3)
+              </li>
+              <li
+                class="checkbox flex gap-[14px] pb-3 pl-[15px] text-dark font-[roboto] text-[20px] font-normal leading-[normal]"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                >
+                  <path
+                    class="svgPath"
+                    d="M23.0459 12.0297C23.0459 18.3648 17.9915 23.4871 11.7729 23.4871C5.55437 23.4871 0.5 18.3648 0.5 12.0297C0.5 5.69456 5.55437 0.572266 11.7729 0.572266C17.9915 0.572266 23.0459 5.69456 23.0459 12.0297Z"
+                    stroke=""
+                  />
+                  <ellipse
+                    class="pathBullete"
+                    cx="11.7731"
+                    cy="11.9574"
+                    rx="7.49187"
+                    ry="7.60926"
+                    fill=""
+                  />
+                </svg>
+                Chatter (6)
+              </li>
+            </ul>
+            <div class="line max-w-[90%] mx-auto border border-b-gray1"></div>
+            <ul class="pt-[42px] pb-[30px]">
+              <li
+                class="flex justify-between items-center bg-gray2 pl-[18px] pr-[6px] py-[12px] ml-[18px] mr-[10px] mb-[22px] rounded-[8px] shadow-[0_4px_20px_0px_rgba(0,0,0,0.03)]"
+              >
+                <div
+                  class="flex items-center gap-[14px] text-dark text-[20px] font-[inter] font-light leading-[normal]"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="25"
+                    height="25"
+                    viewBox="0 0 25 25"
+                    fill="none"
+                  >
+                    <path
+                      d="M6.25016 20.8332L10.4168 16.6665H7.29183V4.1665H5.2085V16.6665H2.0835L6.25016 20.8332ZM11.4585 8.33317H20.8335V10.4165H11.4585V8.33317ZM11.4585 12.4998H18.7502V14.5832H11.4585V12.4998ZM11.4585 4.1665H22.9168V6.24984H11.4585V4.1665ZM11.4585 16.6665H16.6668V18.7498H11.4585V16.6665Z"
+                      fill="black"
+                    />
+                  </svg>
+                  Sort by
+                </div>
+                <div class="chevron cursor-pointer">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="25"
+                    height="25"
+                    viewBox="0 0 25 25"
+                    fill="none"
+                  >
+                    <path
+                      d="M7.2915 10.4165L12.4998 15.6248L17.7082 10.4165H7.2915Z"
+                      fill="black"
+                    />
+                  </svg>
+                </div>
+              </li>
+              <li
+                class="flex justify-between items-center bg-gray2 pl-[18px] pr-[6px] py-[12px] ml-[18px] mr-[10px] mb-[22px] rounded-[8px] shadow-[0_4px_20px_0px_rgba(0,0,0,0.03)]"
+              >
+                <div
+                  class="flex items-center gap-[14px] text-dark text-[20px] font-[inter] font-light leading-[normal]"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="20"
+                    viewBox="0 0 20 20"
+                    fill="none"
+                  >
+                    <path
+                      d="M10.0002 4.49249L2.41245 12.0201C2.35621 12.0771 2.28433 12.1037 2.22253 12.1509V19.375C2.22253 19.5408 2.28106 19.6997 2.38524 19.8169C2.48943 19.9342 2.63073 20 2.77807 20H17.2223C17.3696 20 17.5109 19.9342 17.6151 19.8169C17.7193 19.6997 17.7778 19.5408 17.7778 19.375V12.1525C17.7188 12.1072 17.6486 12.0814 17.5952 12.0275L10.0002 4.49249ZM13.3334 14.6876C13.3334 14.7705 13.3042 14.85 13.2521 14.9086C13.2 14.9672 13.1293 15.0001 13.0557 15.0001H11.1113V17.1876C11.1113 17.2704 11.082 17.3499 11.0299 17.4085C10.9778 17.4671 10.9072 17.5 10.8335 17.5H9.16685C9.09318 17.5 9.02252 17.4671 8.97043 17.4085C8.91834 17.3499 8.88907 17.2704 8.88907 17.1876V15.0001H6.94466C6.87099 15.0001 6.80034 14.9672 6.74825 14.9086C6.69616 14.85 6.66689 14.7705 6.66689 14.6876V12.8126C6.66689 12.7298 6.69616 12.6503 6.74825 12.5917C6.80034 12.5331 6.87099 12.5001 6.94466 12.5001H8.88907V10.3127C8.88907 10.2298 8.91834 10.1503 8.97043 10.0917C9.02252 10.0331 9.09318 10.0002 9.16685 10.0002H10.8335C10.9072 10.0002 10.9778 10.0331 11.0299 10.0917C11.082 10.1503 11.1113 10.2298 11.1113 10.3127V12.5001H13.0557C13.1293 12.5001 13.2 12.5331 13.2521 12.5917C13.3042 12.6503 13.3334 12.7298 13.3334 12.8126V14.6876ZM19.8156 9.2299L10.929 0.401943C10.6746 0.143238 10.3439 0 10.001 0C9.65813 0 9.32745 0.143238 9.0731 0.401943L0.18437 9.2299C0.130072 9.28475 0.0859133 9.3511 0.0544149 9.42515C0.0229165 9.49921 0.00469608 9.57952 0.000794561 9.6615C-0.00310696 9.74348 0.00738685 9.82552 0.0316765 9.90294C0.0559662 9.98036 0.0935757 10.0516 0.142357 10.1127L0.885746 11.0431C0.934503 11.1042 0.99348 11.1539 1.05931 11.1893C1.12514 11.2248 1.19652 11.2453 1.2694 11.2497C1.34227 11.2541 1.41519 11.2422 1.48401 11.2149C1.55282 11.1876 1.61618 11.1453 1.67045 11.0904L9.63281 3.189C9.7343 3.08827 9.86499 3.03268 10.0003 3.03268C10.1357 3.03268 10.2664 3.08827 10.3679 3.189L18.3302 11.09C18.3845 11.1449 18.4479 11.1872 18.5167 11.2145C18.5855 11.2419 18.6584 11.2537 18.7313 11.2493C18.8041 11.2449 18.8755 11.2244 18.9414 11.189C19.0072 11.1535 19.0662 11.1038 19.1149 11.0428L19.858 10.1123C19.9563 9.98895 20.0071 9.8267 19.9992 9.66123C19.9912 9.49576 19.9252 9.34061 19.8156 9.2299Z"
+                      fill="black"
+                    />
+                  </svg>
+                  Select Clinic
+                </div>
+                <div class="chevron cursor-pointer">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="25"
+                    height="25"
+                    viewBox="0 0 25 25"
+                    fill="none"
+                  >
+                    <path
+                      d="M7.2915 10.4165L12.4998 15.6248L17.7082 10.4165H7.2915Z"
+                      fill="black"
+                    />
+                  </svg>
+                </div>
+              </li>
+              <li
+                class="flex justify-between items-center bg-gray2 pl-[18px] pr-[6px] py-[12px] ml-[18px] mr-[10px] mb-[22px] rounded-[8px] shadow-[0_4px_20px_0px_rgba(0,0,0,0.03)]"
+              >
+                <div
+                  class="flex items-center gap-[14px] text-dark text-[20px] font-[inter] font-light leading-[normal]"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="21"
+                    viewBox="0 0 20 21"
+                    fill="none"
+                  >
+                    <path
+                      d="M13.55 14.343C17.325 14.913 20 16.373 20 18.083V20.083H0V18.083C0 16.373 2.675 14.913 6.45 14.343L10 19.083L13.55 14.343ZM5 6.08302H15V8.08302C15 9.14388 14.4732 10.1613 13.5355 10.9114C12.5979 11.6616 11.3261 12.083 10 12.083C8.67392 12.083 7.40215 11.6616 6.46447 10.9114C5.52678 10.1613 5 9.14388 5 8.08302V6.08302ZM5 5.08302L5.5125 0.98302C5.54359 0.735497 5.68889 0.506132 5.92003 0.339714C6.15117 0.173295 6.45154 0.0817737 6.7625 0.0830204H13.25C13.8875 0.0830204 14.425 0.47302 14.4875 0.98302L15 5.08302H5ZM10 1.08302H8.75V2.08302H7.5V3.08302H8.75V4.08302H10V3.08302H11.25V2.08302H10V1.08302Z"
+                      fill="black"
+                    />
+                  </svg>
+                  Select Doctors
+                </div>
+                <div class="chevron cursor-pointer">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="25"
+                    height="25"
+                    viewBox="0 0 25 25"
+                    fill="none"
+                  >
+                    <path
+                      d="M7.2915 10.4165L12.4998 15.6248L17.7082 10.4165H7.2915Z"
+                      fill="black"
+                    />
+                  </svg>
+                </div>
+              </li>
+            </ul>
+
+            <!-- Authore  -->
+            <div
+              class="author bg-grayTrp ml-[15px] mr-[5px] mt-[32px] rounded-[15px] py-[10px]"
+            >
+              <li class="AthName flex items-center gap-5 px-[15px]">
+                <span
+                  class="w-10 h-10 rounded-full grid place-items-center bg-Blue text-white text-[32px] font-bold font-[Roboto] leading-[normal]"
+                >
+                  J
+                </span>
+                <span>
+                  <h4 class="text-[17px] font-bold font-[Inter] text-dark">
+                    Jone doe
+                  </h4>
+                  <h5 class="text-[14px] font-light text-dark3">
+                    admin@emal.com
+                  </h5>
+                </span>
+              </li>
+              <span class="block border border-b-gray1 mt-4"></span>
+              <div class="py-[6px] max-w-[180px] mx-auto">
+                <ul class="text-dark2 flex items-center gap-3 pl-[14px]">
+                  <li class="">
+                    <span class="text-dark text-[17px] font-normal py-1 block"
+                      >Bengali</span
+                    >
+                    <span class="hidden text-dark text-[17px] font-normal py-1"
+                      >English</span
+                    >
+                    <span class="hidden text-dark text-[17px] font-normal py-1"
+                      >Spanish</span
+                    >
+                  </li>
+
+                  <li class="cursor-pointer">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="25"
+                      height="25"
+                      viewBox="0 0 25 25"
+                      fill="none"
+                    >
+                      <path
+                        d="M7.2915 10.4165L12.4998 15.6248L17.7082 10.4165H7.2915Z"
+                        fill="black"
+                      />
+                    </svg>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </aside>
+          <div class="patientDetails w-full lg:w-[1477px]">
+            <div
+              class="serachBar flex justify-end items-center gap-3 xl:gap-[20px] pb-[34px] px-4 xl:pr-[62px]"
+            >
+              <div class="min-w-fit me-auto lg:hidden">
+                <button
+                  class="asideToggler border-2 border-dark bg-white px-1 pb-1 font-bold animate-pulse"
+                >
+                  | | |
+                </button>
+              </div>
+              <div
+                class="searchGroup max-w-[320px] xl:w-[300px] bg-gray2 rounded-[12px] overflow-hidden relative"
+              >
+                <input
+                  type="text"
+                  placeholder="Search Patient"
+                  class="w-full px-3 py-2 xl:py-[16px] pl-[25px] text-dark2 rounded-[12px]"
+                />
+                <span
+                  class="SearchIcon absolute right-4 top-[50%] translate-y-[-50%]"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="21"
+                    height="21"
+                    viewBox="0 0 21 21"
+                    fill="none"
+                  >
+                    <g opacity="0.6">
+                      <path
+                        d="M9.28571 16.5714C13.3095 16.5714 16.5714 13.3095 16.5714 9.28571C16.5714 5.26193 13.3095 2 9.28571 2C5.26193 2 2 5.26193 2 9.28571C2 13.3095 5.26193 16.5714 9.28571 16.5714Z"
+                        fill="#F3F3F3"
+                        stroke="black"
+                        stroke-width="3"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M18.9998 18.9998L15.3569 15.3569"
+                        stroke="black"
+                        stroke-width="3"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </g>
+                  </svg>
+                </span>
+              </div>
+              <button
+                class="addPatientBtn block bg-Blue px-3 py-2 xl:py-[10px] xl:px-[24px] text-white xl:text-[24px] font-[Nunito] font-semibold rounded-[10px]"
+              >
+                Add Patient <span></span>
+              </button>
+              <span>
+                <svg
+                  width="36"
+                  height="36"
+                  viewBox="0 0 36 36"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M16.8722 27.695C24.8012 27.695 28.4693 26.7184 28.8236 22.7988C28.8236 18.8819 26.2662 19.1338 26.2662 14.3279C26.2662 10.5739 22.56 6.30273 16.8722 6.30273C11.1845 6.30273 7.47827 10.5739 7.47827 14.3279C7.47827 19.1338 4.9209 18.8819 4.9209 22.7988C5.27656 26.7333 8.94467 27.695 16.8722 27.695Z"
+                    stroke="#79828D"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M20.2308 31.7573C18.3127 33.802 15.3207 33.8262 13.3843 31.7573"
+                    stroke="#79828D"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M25.3108 19.4519C30.4834 19.4519 34.747 15.416 34.747 10.3526C34.747 5.28924 30.4834 1.25342 25.3108 1.25342C20.1381 1.25342 15.8745 5.28924 15.8745 10.3526C15.8745 15.416 20.1381 19.4519 25.3108 19.4519Z"
+                    fill="#F64E60"
+                    stroke="#F5F6FA"
+                    stroke-width="2"
+                  />
+                  <path
+                    d="M21.341 14.012V12.472L25.919 5.92H28.201V12.304H29.433V14.012H28.201V16H26.241V14.012H21.341ZM26.367 8.02L23.497 12.304H26.367V8.02Z"
+                    fill="white"
+                  />
+                </svg>
+              </span>
+            </div>
+            <div
+              class="patientInner px-4 xl:pr-[62px] pb-[48px] pt-[10px] rounded-lg"
+            >
+              <!-- page-41  -->
+              <ul
+                class="flex justify-end items-center gap-6 py-[9px] pr-[14px]"
+              >
+                <li class="text-dark">Patients Per page</li>
+                <li>
+                  <select name="" id="" class="text-dark">
+                    <option value="100" selected>100</option>
+                  </select>
+                </li>
+                <li class="flex gap-1 text-dark">
+                  <span class="inline-block text-dark">1-41</span>of
+                  <span class="inline-block text-dark">41</span>
+                </li>
+                <li class="flex gap-[18px] items-center">
+                  <span
+                    ><img
+                      src="./assets/Images/chevL.svg"
+                      alt="chev"
+                      class="cursor-pointer"
+                  /></span>
+                  <span class="inline-block rotate-180"
+                    ><img
+                      src="./assets/Images/chevL.svg"
+                      alt="chev"
+                      class="cursor-pointer"
+                  /></span>
+                </li>
+              </ul>
+              <!-- opton -->
+              <ul
+                class="flex justify-evenly flex-wrap xl:grid grid-cols-12 items-center bg-dark4 xl:pl-[28px] py-[16px] rounded-[10px]"
+              >
+                <li
+                  class="w-fit px-1 col-span-3 text-dark5 text-[15px] font-[Nunito] font-normal"
+                >
+                  Name
+                  <span class="inline-block ml-1">
+                    <img src="./assets/Images/Arrow-Down.svg" alt="" />
+                  </span>
+                </li>
+                <li
+                  class="w-fit px-1 col-span-2 text-dark5 text-[15px] font-[Nunito] font-normal"
+                >
+                  Date of Birth
+                  <span class="inline-block ml-1">
+                    <img src="./assets/Images/Arrow-Down.svg" alt="" />
+                  </span>
+                </li>
+                <li
+                  class="w-fit px-1 col-span-1 text-dark5 text-[15px] font-[Nunito] font-normal"
+                >
+                  Phone
+                  <span class="inline-block ml-1">
+                    <img src="./assets/Images/Arrow-Down.svg" alt="" />
+                  </span>
+                </li>
+                <li
+                  class="w-fit px-1 col-span-2 text-dark5 text-[15px] font-[Nunito] font-normal"
+                >
+                  Procedure
+                  <span class="inline-block ml-1">
+                    <img src="./assets/Images/Arrow-Down.svg" alt="" />
+                  </span>
+                </li>
+                <li
+                  class="w-fit px-1 col-span-4 text-dark5 text-[15px] font-[Nunito] font-normal"
+                >
+                  Request Type
+                  <span class="inline-block ml-1">
+                    <img src="./assets/Images/Arrow-Down.svg" alt="" />
+                  </span>
+                </li>
+              </ul>
+              <!-- jhone doe  -->
+              <div
+                class="trial mt-[10px] p-2 bg-white rounded-[10px] shadow-[1px_17px_45px_0_rgba(3,2,41,0.07)]"
+              >
+                <ul
+                  class="flex justify-evenly gap-3 flex-wrap xl:grid grid-cols-12 items-center bg-dpChyan px-5 xl:px-[28px] py-[16px] rounded-[10px]"
+                >
+                  <li
+                    class="min-w-fit col-span-3 text-dark text-[16px] font-[Roboto] font-bold"
+                  >
+                    Jone doe
+                  </li>
+                  <li
+                    class="min-w-fit col-span-2 text-dark text-[15px] font-[Roboto] font-normal"
+                  >
+                    12/31/1976
+                  </li>
+                  <li
+                    class="min-w-fit col-span-1 text-dark text-[16px] font-[Roboto] font-normal"
+                  >
+                    (830) 640-780
+                  </li>
+                  <li
+                    class="min-w-fit col-span-2 text-dark text-[16px] font-[Roboto] font-normal"
+                  >
+                    SCS Trial
+                  </li>
+                  <li
+                    class="min-w-fit col-span-3 text-dark text-[14px] font-[Roboto] font-normal"
+                  >
+                    BV and Prior Authorization (PA)
+                  </li>
+                  <li
+                    class="popupBox min-w-fit col-span-1 xl:ms-auto relative cursor-pointer py-1"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="26"
+                      height="6"
+                      viewBox="0 0 26 6"
+                      fill="none"
+                    >
+                      <path
+                        d="M24.4192 0.959449C23.1852 0.0227198 21.1844 0.0227198 19.9504 0.959449C18.7163 1.89618 18.7163 3.41492 19.9504 4.35165C21.1844 5.28838 23.1852 5.28838 24.4192 4.35165C25.6532 3.41496 25.6532 1.89621 24.4192 0.959449Z"
+                        fill="white"
+                      />
+                      <path
+                        d="M14.9392 0.959449C13.7052 0.0227198 11.7044 0.0227198 10.4704 0.959449C9.23635 1.89618 9.23635 3.41492 10.4704 4.35165C11.7044 5.28838 13.7052 5.28838 14.9392 4.35165C16.1733 3.41496 16.1733 1.89621 14.9392 0.959449Z"
+                        fill="white"
+                      />
+                      <path
+                        d="M5.45924 0.959449C4.22521 0.0227198 2.22443 0.0227198 0.990394 0.959449C-0.24364 1.89618 -0.24364 3.41492 0.990394 4.35165C2.22443 5.28838 4.22521 5.28838 5.45924 4.35165C6.69327 3.41496 6.69327 1.89621 5.45924 0.959449Z"
+                        fill="white"
+                      />
+                    </svg>
+                    <div
+                      class="bg-white p-[6px] rounded-[6px] absolute -left-[30px] top-4"
+                    >
+                      <ul>
+                        <li
+                          class="flex items-center shrink-0 gap-1 text-dpBlue2 text-[10px] font-[Nunito] font-normal rounded-[3px] bg-grayTrp pl-[8px] py-[2px] w-[69px] cursor-pointer"
+                        >
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="9"
+                            height="8"
+                            viewBox="0 0 9 8"
+                            fill="none"
+                          >
+                            <path
+                              fill-rule="evenodd"
+                              clip-rule="evenodd"
+                              d="M3.19742 7.23653L7.22451 2.6941C7.44338 2.44914 7.52119 2.16594 7.44824 1.87758C7.38501 1.61543 7.20019 1.36618 6.92297 1.17709L6.24692 0.708667C5.65842 0.300408 4.92887 0.343382 4.5106 0.811807L4.05828 1.32364C3.99992 1.38767 4.01451 1.48221 4.08746 1.53378C4.08746 1.53378 5.23042 2.33311 5.25474 2.3503C5.33256 2.41476 5.39092 2.50071 5.40551 2.60385C5.42983 2.80583 5.26933 2.99492 5.03101 3.02071C4.91915 3.0336 4.81215 3.00352 4.73433 2.94765L3.53301 2.11394C3.47465 2.07569 3.3871 2.08386 3.33846 2.13543L0.483507 5.35853C0.298689 5.56051 0.235462 5.82266 0.298689 6.07621L0.663462 7.4557C0.682917 7.52875 0.755871 7.58032 0.843417 7.58032L2.44842 7.56313C2.74024 7.55883 3.0126 7.4428 3.19742 7.23653ZM5.44471 6.80697H8.06183C8.31717 6.80697 8.52485 6.99047 8.52485 7.21609C8.52485 7.44213 8.31717 7.6252 8.06183 7.6252H5.44471C5.18937 7.6252 4.98169 7.44213 4.98169 7.21609C4.98169 6.99047 5.18937 6.80697 5.44471 6.80697Z"
+                              fill="#5B93FF"
+                            />
+                          </svg>
+                          Edit
+                        </li>
+                        <li
+                          class="flex items-center shrink-0 gap-1 text-red text-[10px] font-[Nunito] font-normal rounded-[3px] bg-grayTrp pl-[8px] py-[2px] w-[69px] mt-1 cursor-pointer"
+                        >
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="12"
+                            height="11"
+                            viewBox="0 0 12 11"
+                            fill="none"
+                          >
+                            <path
+                              fill-rule="evenodd"
+                              clip-rule="evenodd"
+                              d="M10.1982 3.0279C10.3765 3.0279 10.5249 3.15703 10.5249 3.32133V3.47325C10.5249 3.63355 10.3765 3.76668 10.1982 3.76668H2.60209C2.42334 3.76668 2.2749 3.63355 2.2749 3.47325V3.32133C2.2749 3.15703 2.42334 3.0279 2.60209 3.0279H3.93845C4.20992 3.0279 4.44617 2.8596 4.50723 2.62213L4.57722 2.34949C4.68598 1.9781 5.04392 1.73145 5.45357 1.73145H7.34624C7.75143 1.73145 8.11338 1.9781 8.21813 2.3299L8.29302 2.62173C8.35364 2.8596 8.58989 3.0279 8.8618 3.0279H10.1982ZM9.51924 8.58119C9.65876 7.44704 9.90303 4.75259 9.90303 4.7254C9.91195 4.64305 9.88119 4.56509 9.82012 4.50233C9.7546 4.44356 9.67169 4.40878 9.58031 4.40878H3.22298C3.13115 4.40878 3.04378 4.44356 2.98316 4.50233C2.92165 4.56509 2.89134 4.64305 2.89579 4.7254C2.89661 4.7304 2.90538 4.82531 2.92003 4.98399C2.98513 5.68889 3.16644 7.65217 3.2836 8.58119C3.36651 9.2656 3.88135 9.69575 4.6271 9.71134C5.20257 9.72294 5.79542 9.72693 6.40164 9.72693C6.97265 9.72693 7.55258 9.72294 8.14587 9.71134C8.91747 9.69975 9.43187 9.27719 9.51924 8.58119Z"
+                              fill="#E71D36"
+                            />
+                          </svg>
+                          Delete
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                </ul>
+                <div
+                  class="trial py-[24px] pl-[6px] mt-[6px] bg-gray3 rounded-[10px]"
+                >
+                  <h5
+                    class="text-[14px] text-dark font-normal font-[Roboto] pl-[6px] pb-[16px]"
+                  >
+                    Harrison Hallstrom
+                  </h5>
+                  <div class="trialWraoper flex gap-5 items-center">
+                    <ul class="xl:w-2/5">
+                      <li class="flex items-center mb-[4px]">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                        >
+                          <path
+                            d="M9.00016 16.4196L4.83016 12.4187L3.41016 13.7715L9.00016 19.1349L21.0002 7.62139L19.5902 6.26855L9.00016 16.4196Z"
+                            fill="#24B544"
+                          />
+                        </svg>
+                        <div class="text-dark pl-[8px]">
+                          <span class="font-bold text-dark"
+                            >Doctor Intake:</span
+                          >
+                          Completed On -<span class="font-bold text-dark">
+                            05 Dec 2023</span
+                          >
+                        </div>
+                      </li>
+                      <li class="flex items-center mb-[4px]">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                        >
+                          <path
+                            d="M9.00016 16.4196L4.83016 12.4187L3.41016 13.7715L9.00016 19.1349L21.0002 7.62139L19.5902 6.26855L9.00016 16.4196Z"
+                            fill="#24B544"
+                          />
+                        </svg>
+                        <div class="text-dark pl-[8px]">
+                          <span class="font-bold text-dark"
+                            >Patient Authorization:</span
+                          >
+                          Completed On -<span class="font-bold text-dark">
+                            05 Dec 2023</span
+                          >
+                        </div>
+                      </li>
+                      <li class="flex items-center">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                        >
+                          <path
+                            d="M9.00016 16.4196L4.83016 12.4187L3.41016 13.7715L9.00016 19.1349L21.0002 7.62139L19.5902 6.26855L9.00016 16.4196Z"
+                            fill="#24B544"
+                          />
+                        </svg>
+                        <div class="text-dark pl-[8px]">
+                          <span class="font-bold text-dark"
+                            >Document Sent to Nevro</span
+                          >
+                          Sent On -<span class="font-bold text-dark">
+                            05 Dec 2023</span
+                          >
+                        </div>
+                      </li>
+                    </ul>
+                    <ul class="xl:w-3/5 pl-[16px] border-l-2 border-l-yellow">
+                      <li class="text-[14px] text-dark2 pb-3">
+                        <span class="font-bold text-dark pr-2">Status: </span
+                        >Request Reachived
+                      </li>
+                      <li class="text-[14px] text-dark2 pb-3">
+                        <span class="font-bold text-dark pr-2"
+                          >Sub Status :
+                        </span>
+                      </li>
+                      <li class="text-[14px] text-dark2 pb-3">
+                        <span class="font-bold text-dark pr-2"
+                          >Due Date :
+                        </span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <!-- Michael Conix -->
+              <div
+                class="trial mt-[14px] p-2 bg-white rounded-[10px] shadow-[1px_17px_45px_0_rgba(3,2,41,0.07)]"
+              >
+                <ul
+                  class="flex justify-evenly gap-3 xl:gap-0 flex-wrap xl:grid grid-cols-12 items-center bg-red2 px-[28px] py-[16px] rounded-[10px]"
+                >
+                  <li
+                    class="col-span-3 text-dark text-[16px] font-[Roboto] font-bold"
+                  >
+                    Michael Conix
+                  </li>
+                  <li
+                    class="col-span-2 text-dark text-[15px] font-[Roboto] font-normal"
+                  >
+                    12/31/1976
+                  </li>
+                  <li
+                    class="min-w-fit col-span-2 text-dark text-[16px] font-[Roboto] font-normal"
+                  >
+                    (830) 640-780
+                  </li>
+                  <li
+                    class="col-span-1 text-dark text-[16px] font-[Roboto] font-normal"
+                  >
+                    SCS Trial
+                  </li>
+                  <li
+                    class="col-span-3 text-dark text-[14px] font-[Roboto] font-normal"
+                  >
+                    BV and Prior Authorization (PA)
+                  </li>
+                  <li
+                    class="popupBox col-span-1 xl:ms-auto relative cursor-pointer py-1"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="26"
+                      height="6"
+                      viewBox="0 0 26 6"
+                      fill="none"
+                    >
+                      <path
+                        d="M24.4192 0.959449C23.1852 0.0227198 21.1844 0.0227198 19.9504 0.959449C18.7163 1.89618 18.7163 3.41492 19.9504 4.35165C21.1844 5.28838 23.1852 5.28838 24.4192 4.35165C25.6532 3.41496 25.6532 1.89621 24.4192 0.959449Z"
+                        fill="white"
+                      />
+                      <path
+                        d="M14.9392 0.959449C13.7052 0.0227198 11.7044 0.0227198 10.4704 0.959449C9.23635 1.89618 9.23635 3.41492 10.4704 4.35165C11.7044 5.28838 13.7052 5.28838 14.9392 4.35165C16.1733 3.41496 16.1733 1.89621 14.9392 0.959449Z"
+                        fill="white"
+                      />
+                      <path
+                        d="M5.45924 0.959449C4.22521 0.0227198 2.22443 0.0227198 0.990394 0.959449C-0.24364 1.89618 -0.24364 3.41492 0.990394 4.35165C2.22443 5.28838 4.22521 5.28838 5.45924 4.35165C6.69327 3.41496 6.69327 1.89621 5.45924 0.959449Z"
+                        fill="white"
+                      />
+                    </svg>
+                    <div
+                      class="popup bg-white p-[6px] rounded-[6px] absolute -left-[30px] top-4"
+                    >
+                      <ul>
+                        <li
+                          class="flex items-center shrink-0 gap-1 text-dpBlue2 text-[10px] font-[Nunito] font-normal rounded-[3px] bg-grayTrp pl-[8px] py-[2px] w-[69px] cursor-pointer"
+                        >
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="9"
+                            height="8"
+                            viewBox="0 0 9 8"
+                            fill="none"
+                          >
+                            <path
+                              fill-rule="evenodd"
+                              clip-rule="evenodd"
+                              d="M3.19742 7.23653L7.22451 2.6941C7.44338 2.44914 7.52119 2.16594 7.44824 1.87758C7.38501 1.61543 7.20019 1.36618 6.92297 1.17709L6.24692 0.708667C5.65842 0.300408 4.92887 0.343382 4.5106 0.811807L4.05828 1.32364C3.99992 1.38767 4.01451 1.48221 4.08746 1.53378C4.08746 1.53378 5.23042 2.33311 5.25474 2.3503C5.33256 2.41476 5.39092 2.50071 5.40551 2.60385C5.42983 2.80583 5.26933 2.99492 5.03101 3.02071C4.91915 3.0336 4.81215 3.00352 4.73433 2.94765L3.53301 2.11394C3.47465 2.07569 3.3871 2.08386 3.33846 2.13543L0.483507 5.35853C0.298689 5.56051 0.235462 5.82266 0.298689 6.07621L0.663462 7.4557C0.682917 7.52875 0.755871 7.58032 0.843417 7.58032L2.44842 7.56313C2.74024 7.55883 3.0126 7.4428 3.19742 7.23653ZM5.44471 6.80697H8.06183C8.31717 6.80697 8.52485 6.99047 8.52485 7.21609C8.52485 7.44213 8.31717 7.6252 8.06183 7.6252H5.44471C5.18937 7.6252 4.98169 7.44213 4.98169 7.21609C4.98169 6.99047 5.18937 6.80697 5.44471 6.80697Z"
+                              fill="#5B93FF"
+                            />
+                          </svg>
+                          Edit
+                        </li>
+                        <li
+                          class="flex items-center shrink-0 gap-1 text-red text-[10px] font-[Nunito] font-normal rounded-[3px] bg-grayTrp pl-[8px] py-[2px] w-[69px] mt-1 cursor-pointer"
+                        >
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="12"
+                            height="11"
+                            viewBox="0 0 12 11"
+                            fill="none"
+                          >
+                            <path
+                              fill-rule="evenodd"
+                              clip-rule="evenodd"
+                              d="M10.1982 3.0279C10.3765 3.0279 10.5249 3.15703 10.5249 3.32133V3.47325C10.5249 3.63355 10.3765 3.76668 10.1982 3.76668H2.60209C2.42334 3.76668 2.2749 3.63355 2.2749 3.47325V3.32133C2.2749 3.15703 2.42334 3.0279 2.60209 3.0279H3.93845C4.20992 3.0279 4.44617 2.8596 4.50723 2.62213L4.57722 2.34949C4.68598 1.9781 5.04392 1.73145 5.45357 1.73145H7.34624C7.75143 1.73145 8.11338 1.9781 8.21813 2.3299L8.29302 2.62173C8.35364 2.8596 8.58989 3.0279 8.8618 3.0279H10.1982ZM9.51924 8.58119C9.65876 7.44704 9.90303 4.75259 9.90303 4.7254C9.91195 4.64305 9.88119 4.56509 9.82012 4.50233C9.7546 4.44356 9.67169 4.40878 9.58031 4.40878H3.22298C3.13115 4.40878 3.04378 4.44356 2.98316 4.50233C2.92165 4.56509 2.89134 4.64305 2.89579 4.7254C2.89661 4.7304 2.90538 4.82531 2.92003 4.98399C2.98513 5.68889 3.16644 7.65217 3.2836 8.58119C3.36651 9.2656 3.88135 9.69575 4.6271 9.71134C5.20257 9.72294 5.79542 9.72693 6.40164 9.72693C6.97265 9.72693 7.55258 9.72294 8.14587 9.71134C8.91747 9.69975 9.43187 9.27719 9.51924 8.58119Z"
+                              fill="#E71D36"
+                            />
+                          </svg>
+                          Delete
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                </ul>
+                <div
+                  class="trial py-[24px] px-[6px] mt-[6px] bg-gray3 rounded-[10px]"
+                >
+                  <h5
+                    class="text-[14px] text-dark font-normal font-[Roboto] pl-[6px] pb-[16px]"
+                  >
+                    Harrison Hallstrom
+                  </h5>
+                  <div
+                    class="trialWraoper flex justify-between xl:justify-normal gap-3 lg:gap-0 flex-wrap"
+                  >
+                    <ul class="w-fit lg:w-[32%]">
+                      <li class="flex items-center mb-[4px]">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="15"
+                          height="16"
+                          viewBox="0 0 15 16"
+                          fill="none"
+                        >
+                          <path
+                            d="M14.781 14.3027C14.8507 14.372 14.906 14.4542 14.9437 14.5447C14.9814 14.6352 15.0008 14.7322 15.0008 14.8302C15.0008 14.9282 14.9814 15.0252 14.9437 15.1157C14.906 15.2062 14.8507 15.2884 14.781 15.3577C14.7114 15.4269 14.6286 15.4819 14.5376 15.5194C14.4465 15.5569 14.349 15.5762 14.2504 15.5762C14.1519 15.5762 14.0543 15.5569 13.9632 15.5194C13.8722 15.4819 13.7895 15.4269 13.7198 15.3577L7.50042 9.17436L1.28104 15.3577C1.14031 15.4976 0.94944 15.5762 0.750417 15.5762C0.551394 15.5762 0.360523 15.4976 0.219792 15.3577C0.0790615 15.2178 3.92322e-09 15.028 0 14.8302C-3.92322e-09 14.6324 0.0790615 14.4426 0.219792 14.3027L6.4401 8.12035L0.219792 1.93797C0.0790615 1.79808 -1.48284e-09 1.60834 0 1.4105C1.48284e-09 1.21266 0.0790615 1.02293 0.219792 0.883035C0.360523 0.743142 0.551394 0.664551 0.750417 0.664551C0.94944 0.664551 1.14031 0.743142 1.28104 0.883035L7.50042 7.06635L13.7198 0.883035C13.8605 0.743142 14.0514 0.664551 14.2504 0.664551C14.4494 0.664551 14.6403 0.743142 14.781 0.883035C14.9218 1.02293 15.0008 1.21266 15.0008 1.4105C15.0008 1.60834 14.9218 1.79808 14.781 1.93797L8.56073 8.12035L14.781 14.3027Z"
+                            fill="#FF6347"
+                          />
+                        </svg>
+                        <div class="text-dark pl-[8px]">
+                          <span class="font-bold text-dark">Doctor Intake</span>
+                        </div>
+                      </li>
+                      <li class="flex items-center mb-[4px]">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="15"
+                          height="16"
+                          viewBox="0 0 15 16"
+                          fill="none"
+                        >
+                          <path
+                            d="M14.781 14.3027C14.8507 14.372 14.906 14.4542 14.9437 14.5447C14.9814 14.6352 15.0008 14.7322 15.0008 14.8302C15.0008 14.9282 14.9814 15.0252 14.9437 15.1157C14.906 15.2062 14.8507 15.2884 14.781 15.3577C14.7114 15.4269 14.6286 15.4819 14.5376 15.5194C14.4465 15.5569 14.349 15.5762 14.2504 15.5762C14.1519 15.5762 14.0543 15.5569 13.9632 15.5194C13.8722 15.4819 13.7895 15.4269 13.7198 15.3577L7.50042 9.17436L1.28104 15.3577C1.14031 15.4976 0.94944 15.5762 0.750417 15.5762C0.551394 15.5762 0.360523 15.4976 0.219792 15.3577C0.0790615 15.2178 3.92322e-09 15.028 0 14.8302C-3.92322e-09 14.6324 0.0790615 14.4426 0.219792 14.3027L6.4401 8.12035L0.219792 1.93797C0.0790615 1.79808 -1.48284e-09 1.60834 0 1.4105C1.48284e-09 1.21266 0.0790615 1.02293 0.219792 0.883035C0.360523 0.743142 0.551394 0.664551 0.750417 0.664551C0.94944 0.664551 1.14031 0.743142 1.28104 0.883035L7.50042 7.06635L13.7198 0.883035C13.8605 0.743142 14.0514 0.664551 14.2504 0.664551C14.4494 0.664551 14.6403 0.743142 14.781 0.883035C14.9218 1.02293 15.0008 1.21266 15.0008 1.4105C15.0008 1.60834 14.9218 1.79808 14.781 1.93797L8.56073 8.12035L14.781 14.3027Z"
+                            fill="#FF6347"
+                          />
+                        </svg>
+                        <div class="text-dark pl-[8px]">
+                          <span class="font-bold text-dark"
+                            >Patient Authorization</span
+                          >
+                        </div>
+                      </li>
+                      <li class="flex items-center mb-[4px]">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="15"
+                          height="16"
+                          viewBox="0 0 15 16"
+                          fill="none"
+                        >
+                          <path
+                            d="M14.781 14.3027C14.8507 14.372 14.906 14.4542 14.9437 14.5447C14.9814 14.6352 15.0008 14.7322 15.0008 14.8302C15.0008 14.9282 14.9814 15.0252 14.9437 15.1157C14.906 15.2062 14.8507 15.2884 14.781 15.3577C14.7114 15.4269 14.6286 15.4819 14.5376 15.5194C14.4465 15.5569 14.349 15.5762 14.2504 15.5762C14.1519 15.5762 14.0543 15.5569 13.9632 15.5194C13.8722 15.4819 13.7895 15.4269 13.7198 15.3577L7.50042 9.17436L1.28104 15.3577C1.14031 15.4976 0.94944 15.5762 0.750417 15.5762C0.551394 15.5762 0.360523 15.4976 0.219792 15.3577C0.0790615 15.2178 3.92322e-09 15.028 0 14.8302C-3.92322e-09 14.6324 0.0790615 14.4426 0.219792 14.3027L6.4401 8.12035L0.219792 1.93797C0.0790615 1.79808 -1.48284e-09 1.60834 0 1.4105C1.48284e-09 1.21266 0.0790615 1.02293 0.219792 0.883035C0.360523 0.743142 0.551394 0.664551 0.750417 0.664551C0.94944 0.664551 1.14031 0.743142 1.28104 0.883035L7.50042 7.06635L13.7198 0.883035C13.8605 0.743142 14.0514 0.664551 14.2504 0.664551C14.4494 0.664551 14.6403 0.743142 14.781 0.883035C14.9218 1.02293 15.0008 1.21266 15.0008 1.4105C15.0008 1.60834 14.9218 1.79808 14.781 1.93797L8.56073 8.12035L14.781 14.3027Z"
+                            fill="#FF6347"
+                          />
+                        </svg>
+                        <div class="text-dark pl-[8px]">
+                          <span class="font-bold text-dark"
+                            >Document Sent to Nevro</span
+                          >
+                        </div>
+                      </li>
+                    </ul>
+                    <ul class="w-fit lg:w-[20%]">
+                      <li
+                        class="text-[14px] font-light text-dark font-[Roboto] pb-2"
+                      >
+                        Followup text sent:
+                      </li>
+                      <li
+                        class="text-[14px] font-light text-dark font-[Roboto] pb-2"
+                      >
+                        Followup text sent:
+                      </li>
+                    </ul>
+                    <ul class="w-fit lg:w-[40%]">
+                      <li
+                        class="text-[14px] font-light text-dark font-[Roboto] pb-2"
+                      >
+                        Send Followup Text
+                      </li>
+                      <li
+                        class="text-[14px] font-light text-dark font-[Roboto] pb-2"
+                      >
+                        Send Followup Text
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <!-- Sam Smith -->
+              <div
+                class="trial mt-[20px] p-2 bg-white rounded-[10px] shadow-[1px_17px_45px_0_rgba(3,2,41,0.07)]"
+              >
+                <ul
+                  class="flex justify-evenly gap-3 xl:gap-0 flex-wrap xl:grid grid-cols-12 items-center bg-yellow px-[28px] py-[16px] rounded-[10px]"
+                >
+                  <li
+                    class="col-span-3 text-dark text-[16px] font-[Roboto] font-bold"
+                  >
+                    Sam Smith
+                  </li>
+                  <li
+                    class="col-span-2 text-dark text-[15px] font-[Roboto] font-normal"
+                  >
+                    12/31/1976
+                  </li>
+                  <li
+                    class="col-span-2 text-dark text-[16px] font-[Roboto] font-normal"
+                  >
+                    (830) 640-780
+                  </li>
+                  <li
+                    class="col-span-1 text-dark text-[16px] font-[Roboto] font-normal"
+                  >
+                    SCS Trial
+                  </li>
+                  <li
+                    class="col-span-3 text-dark text-[14px] font-[Roboto] font-normal"
+                  >
+                    BV and Prior Authorization (PA)
+                  </li>
+                  <li
+                    class="popupBox col-span-1 ms-auto relative cursor-pointer py-1"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="26"
+                      height="6"
+                      viewBox="0 0 26 6"
+                      fill="none"
+                    >
+                      <path
+                        d="M24.4192 0.959449C23.1852 0.0227198 21.1844 0.0227198 19.9504 0.959449C18.7163 1.89618 18.7163 3.41492 19.9504 4.35165C21.1844 5.28838 23.1852 5.28838 24.4192 4.35165C25.6532 3.41496 25.6532 1.89621 24.4192 0.959449Z"
+                        fill="white"
+                      />
+                      <path
+                        d="M14.9392 0.959449C13.7052 0.0227198 11.7044 0.0227198 10.4704 0.959449C9.23635 1.89618 9.23635 3.41492 10.4704 4.35165C11.7044 5.28838 13.7052 5.28838 14.9392 4.35165C16.1733 3.41496 16.1733 1.89621 14.9392 0.959449Z"
+                        fill="white"
+                      />
+                      <path
+                        d="M5.45924 0.959449C4.22521 0.0227198 2.22443 0.0227198 0.990394 0.959449C-0.24364 1.89618 -0.24364 3.41492 0.990394 4.35165C2.22443 5.28838 4.22521 5.28838 5.45924 4.35165C6.69327 3.41496 6.69327 1.89621 5.45924 0.959449Z"
+                        fill="white"
+                      />
+                    </svg>
+                    <div
+                      class="popup bg-white p-[6px] rounded-[6px] absolute -left-[30px] top-4"
+                    >
+                      <ul>
+                        <li
+                          class="flex items-center shrink-0 gap-1 text-dpBlue2 text-[10px] font-[Nunito] font-normal rounded-[3px] bg-grayTrp pl-[8px] py-[2px] w-[69px] cursor-pointer"
+                        >
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="9"
+                            height="8"
+                            viewBox="0 0 9 8"
+                            fill="none"
+                          >
+                            <path
+                              fill-rule="evenodd"
+                              clip-rule="evenodd"
+                              d="M3.19742 7.23653L7.22451 2.6941C7.44338 2.44914 7.52119 2.16594 7.44824 1.87758C7.38501 1.61543 7.20019 1.36618 6.92297 1.17709L6.24692 0.708667C5.65842 0.300408 4.92887 0.343382 4.5106 0.811807L4.05828 1.32364C3.99992 1.38767 4.01451 1.48221 4.08746 1.53378C4.08746 1.53378 5.23042 2.33311 5.25474 2.3503C5.33256 2.41476 5.39092 2.50071 5.40551 2.60385C5.42983 2.80583 5.26933 2.99492 5.03101 3.02071C4.91915 3.0336 4.81215 3.00352 4.73433 2.94765L3.53301 2.11394C3.47465 2.07569 3.3871 2.08386 3.33846 2.13543L0.483507 5.35853C0.298689 5.56051 0.235462 5.82266 0.298689 6.07621L0.663462 7.4557C0.682917 7.52875 0.755871 7.58032 0.843417 7.58032L2.44842 7.56313C2.74024 7.55883 3.0126 7.4428 3.19742 7.23653ZM5.44471 6.80697H8.06183C8.31717 6.80697 8.52485 6.99047 8.52485 7.21609C8.52485 7.44213 8.31717 7.6252 8.06183 7.6252H5.44471C5.18937 7.6252 4.98169 7.44213 4.98169 7.21609C4.98169 6.99047 5.18937 6.80697 5.44471 6.80697Z"
+                              fill="#5B93FF"
+                            />
+                          </svg>
+                          Edit
+                        </li>
+                        <li
+                          class="flex items-center shrink-0 gap-1 text-red text-[10px] font-[Nunito] font-normal rounded-[3px] bg-grayTrp pl-[8px] py-[2px] w-[69px] mt-1 cursor-pointer"
+                        >
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="12"
+                            height="11"
+                            viewBox="0 0 12 11"
+                            fill="none"
+                          >
+                            <path
+                              fill-rule="evenodd"
+                              clip-rule="evenodd"
+                              d="M10.1982 3.0279C10.3765 3.0279 10.5249 3.15703 10.5249 3.32133V3.47325C10.5249 3.63355 10.3765 3.76668 10.1982 3.76668H2.60209C2.42334 3.76668 2.2749 3.63355 2.2749 3.47325V3.32133C2.2749 3.15703 2.42334 3.0279 2.60209 3.0279H3.93845C4.20992 3.0279 4.44617 2.8596 4.50723 2.62213L4.57722 2.34949C4.68598 1.9781 5.04392 1.73145 5.45357 1.73145H7.34624C7.75143 1.73145 8.11338 1.9781 8.21813 2.3299L8.29302 2.62173C8.35364 2.8596 8.58989 3.0279 8.8618 3.0279H10.1982ZM9.51924 8.58119C9.65876 7.44704 9.90303 4.75259 9.90303 4.7254C9.91195 4.64305 9.88119 4.56509 9.82012 4.50233C9.7546 4.44356 9.67169 4.40878 9.58031 4.40878H3.22298C3.13115 4.40878 3.04378 4.44356 2.98316 4.50233C2.92165 4.56509 2.89134 4.64305 2.89579 4.7254C2.89661 4.7304 2.90538 4.82531 2.92003 4.98399C2.98513 5.68889 3.16644 7.65217 3.2836 8.58119C3.36651 9.2656 3.88135 9.69575 4.6271 9.71134C5.20257 9.72294 5.79542 9.72693 6.40164 9.72693C6.97265 9.72693 7.55258 9.72294 8.14587 9.71134C8.91747 9.69975 9.43187 9.27719 9.51924 8.58119Z"
+                              fill="#E71D36"
+                            />
+                          </svg>
+                          Delete
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                </ul>
+                <div
+                  class="trial py-[24px] pl-[6px] mt-[6px] bg-gray3 rounded-[10px]"
+                >
+                  <h5
+                    class="text-[14px] text-dark font-normal font-[Roboto] pl-[6px] pb-[16px]"
+                  >
+                    Harrison Hallstrom
+                  </h5>
+                  <div
+                    class="trialWraoper flex justify-between xl:justify-normal gap-3 lg:gap-0 flex-wrap"
+                  >
+                    <ul class="w-fit lg:w-[35%]">
+                      <li class="flex items-center mb-[4px]">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="15"
+                          height="16"
+                          viewBox="0 0 15 16"
+                          fill="none"
+                        >
+                          <path
+                            d="M14.781 14.3027C14.8507 14.372 14.906 14.4542 14.9437 14.5447C14.9814 14.6352 15.0008 14.7322 15.0008 14.8302C15.0008 14.9282 14.9814 15.0252 14.9437 15.1157C14.906 15.2062 14.8507 15.2884 14.781 15.3577C14.7114 15.4269 14.6286 15.4819 14.5376 15.5194C14.4465 15.5569 14.349 15.5762 14.2504 15.5762C14.1519 15.5762 14.0543 15.5569 13.9632 15.5194C13.8722 15.4819 13.7895 15.4269 13.7198 15.3577L7.50042 9.17436L1.28104 15.3577C1.14031 15.4976 0.94944 15.5762 0.750417 15.5762C0.551394 15.5762 0.360523 15.4976 0.219792 15.3577C0.0790615 15.2178 3.92322e-09 15.028 0 14.8302C-3.92322e-09 14.6324 0.0790615 14.4426 0.219792 14.3027L6.4401 8.12035L0.219792 1.93797C0.0790615 1.79808 -1.48284e-09 1.60834 0 1.4105C1.48284e-09 1.21266 0.0790615 1.02293 0.219792 0.883035C0.360523 0.743142 0.551394 0.664551 0.750417 0.664551C0.94944 0.664551 1.14031 0.743142 1.28104 0.883035L7.50042 7.06635L13.7198 0.883035C13.8605 0.743142 14.0514 0.664551 14.2504 0.664551C14.4494 0.664551 14.6403 0.743142 14.781 0.883035C14.9218 1.02293 15.0008 1.21266 15.0008 1.4105C15.0008 1.60834 14.9218 1.79808 14.781 1.93797L8.56073 8.12035L14.781 14.3027Z"
+                            fill="#FF6347"
+                          />
+                        </svg>
+                        <div class="text-dark pl-[8px]">
+                          <span class="font-bold text-dark">Doctor Intake</span>
+                        </div>
+                      </li>
+                      <li class="flex items-center mb-[4px]">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                        >
+                          <path
+                            d="M9.00016 16.4196L4.83016 12.4187L3.41016 13.7715L9.00016 19.1349L21.0002 7.62139L19.5902 6.26855L9.00016 16.4196Z"
+                            fill="#24B544"
+                          />
+                        </svg>
+                        <div class="text-dark pl-[8px]">
+                          <span class="font-bold text-dark"
+                            >Patient Authorization:</span
+                          >
+                          Completed On -<span class="font-bold text-dark">
+                            05 Dec 2023</span
+                          >
+                        </div>
+                      </li>
+                      <li class="flex items-center mb-[4px]">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="15"
+                          height="16"
+                          viewBox="0 0 15 16"
+                          fill="none"
+                        >
+                          <path
+                            d="M14.781 14.3027C14.8507 14.372 14.906 14.4542 14.9437 14.5447C14.9814 14.6352 15.0008 14.7322 15.0008 14.8302C15.0008 14.9282 14.9814 15.0252 14.9437 15.1157C14.906 15.2062 14.8507 15.2884 14.781 15.3577C14.7114 15.4269 14.6286 15.4819 14.5376 15.5194C14.4465 15.5569 14.349 15.5762 14.2504 15.5762C14.1519 15.5762 14.0543 15.5569 13.9632 15.5194C13.8722 15.4819 13.7895 15.4269 13.7198 15.3577L7.50042 9.17436L1.28104 15.3577C1.14031 15.4976 0.94944 15.5762 0.750417 15.5762C0.551394 15.5762 0.360523 15.4976 0.219792 15.3577C0.0790615 15.2178 3.92322e-09 15.028 0 14.8302C-3.92322e-09 14.6324 0.0790615 14.4426 0.219792 14.3027L6.4401 8.12035L0.219792 1.93797C0.0790615 1.79808 -1.48284e-09 1.60834 0 1.4105C1.48284e-09 1.21266 0.0790615 1.02293 0.219792 0.883035C0.360523 0.743142 0.551394 0.664551 0.750417 0.664551C0.94944 0.664551 1.14031 0.743142 1.28104 0.883035L7.50042 7.06635L13.7198 0.883035C13.8605 0.743142 14.0514 0.664551 14.2504 0.664551C14.4494 0.664551 14.6403 0.743142 14.781 0.883035C14.9218 1.02293 15.0008 1.21266 15.0008 1.4105C15.0008 1.60834 14.9218 1.79808 14.781 1.93797L8.56073 8.12035L14.781 14.3027Z"
+                            fill="#FF6347"
+                          />
+                        </svg>
+                        <div class="text-dark pl-[8px]">
+                          <span class="font-bold text-dark"
+                            >Document Sent to Nevro</span
+                          >
+                        </div>
+                      </li>
+                    </ul>
+                    <ul class="w-fit lg:w-[20%]">
+                      <li
+                        class="text-[14px] font-light text-dark font-[Roboto] pb-2"
+                      >
+                        Followup text sent:
+                      </li>
+                    </ul>
+                    <ul class="w-fit lg:w-[45%]">
+                      <li
+                        class="text-[14px] font-light text-dark font-[Roboto] pb-2"
+                      >
+                        Send Followup Text
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="canvasBody hidden fixed left-0 top-0 right-0 w-full h-full bg-darkTrp transition-all z-[99]"
+        ></div>
+        <div
+          class="rCanvas pt-[60px] pb-[70px] pl-[60px] pr-[45px] py-8 bg-white shadow-md w-full md:w-[600px] h-[100vh] fixed -right-full top-0 z-[999] transition-all"
+        >
+          <span class="closePatient border py-3 block text-center">Back</span>
+          <h2 class="text-4xl text-dark font-semibold">Add New Patient</h2>
+        </div>
+      </section>
+    </main>
+    <footer></footer>
+
+    <script src="./dist/script.js"></script>
+  </body>
+</html>

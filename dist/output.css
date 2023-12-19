@@ -3194,6 +3194,10 @@ svg {
     width: 45%;
   }
 
+  .lg\:w-\[1491px\] {
+    width: 1491px;
+  }
+
   .lg\:gap-0 {
     gap: 0px;
   }

@@ -551,39 +551,12 @@
                 </svg>
               </span>
             </div>
+
+            <!-- patient list  -->
             <div
               class="patientInner px-4 xl:pr-[62px] pb-[48px] pt-[10px] rounded-lg"
             >
-              <!-- page-41  -->
-              <ul
-                class="flex justify-end items-center gap-6 py-[9px] pr-[14px]"
-              >
-                <li class="text-dark">Patients Per page</li>
-                <li>
-                  <select name="" id="" class="text-dark">
-                    <option value="100" selected>100</option>
-                  </select>
-                </li>
-                <li class="flex gap-1 text-dark">
-                  <span class="inline-block text-dark">1-41</span>of
-                  <span class="inline-block text-dark">41</span>
-                </li>
-                <li class="flex gap-[18px] items-center">
-                  <span
-                    ><img
-                      src="./assets/Images/chevL.svg"
-                      alt="chev"
-                      class="cursor-pointer"
-                  /></span>
-                  <span class="inline-block rotate-180"
-                    ><img
-                      src="./assets/Images/chevL.svg"
-                      alt="chev"
-                      class="cursor-pointer"
-                  /></span>
-                </li>
-              </ul>
-              <!-- opton -->
+              <!-- option -->
               <ul
                 class="flex justify-evenly flex-wrap xl:grid grid-cols-12 items-center bg-dark4 xl:pl-[28px] py-[16px] rounded-[10px]"
               >
@@ -1211,16 +1184,224 @@
                 </div>
               </div>
             </div>
+
+            <!-- system user  -->
+            <div
+              class="flex flex-col gap-8 px-4 xl:pr-[62px] pb-[62px] pt-[10px] rounded-lg"
+            >
+              <!-- option -->
+              <ul
+                class="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-2 xl:grid-cols-3 xxl:grid-cols-4 gap-2 bg-white px-4 xl:pl-[28px] py-[16px] rounded-[10px]"
+              >
+                <li
+                  class="userIconLi w-fit px-2 text-gray4 hover:text-dark text-[16px] font-[Roboto] font-bold cursor-pointer"
+                >
+                  <div class="flex items-center gap-1">
+                    <img
+                      class="uIcon_1"
+                      src="./assets/Images/userIcon.png"
+                      alt="userIcon"
+                    />
+                    <img
+                      class="uIcon_2 hidden"
+                      src="./assets/Images/userIcon1.png"
+                      alt="userIcon"
+                    />
+                    Basic information
+                  </div>
+                </li>
+                <li
+                  class="userIconLi w-fit px-2 text-gray4 hover:text-dark text-[16px] font-[Roboto] font-bold cursor-pointer"
+                >
+                  <div class="flex items-center gap-1">
+                    <img
+                      class="uIcon_1"
+                      src="./assets/Images/userIcon3.png"
+                      alt="userIcon"
+                    />
+                    <img
+                      class="uIcon_2 hidden"
+                      src="./assets/Images/userIcon2.png"
+                      alt="userIcon"
+                    />
+                    Insurance Information
+                  </div>
+                </li>
+                <li
+                  class="userIconLi w-fit px-2 text-gray4 hover:text-dark text-[16px] font-[Roboto] font-bold cursor-pointer"
+                >
+                  <div class="flex items-center gap-1">
+                    <img
+                      class="uIcon_1"
+                      src="./assets/Images/userIcon4.png"
+                      alt="userIcon"
+                    />
+                    <img
+                      class="uIcon_2 hidden"
+                      src="./assets/Images/userIcon5.png"
+                      alt="userIcon"
+                    />
+                    Treatment History
+                  </div>
+                </li>
+                <li
+                  class="userIconLi w-fit px-2 text-gray4 hover:text-dark text-[16px] font-[Roboto] font-bold cursor-pointer"
+                >
+                  <div class="flex items-center gap-1">
+                    <img
+                      class="uIcon_1"
+                      src="./assets/Images/userIcon6.png"
+                      alt="userIcon"
+                    />
+                    <img
+                      class="uIcon_2 hidden"
+                      src="./assets/Images/userIcon7.png"
+                      alt="userIcon"
+                    />
+                    Medical Necessity Notes
+                  </div>
+                </li>
+              </ul>
+
+              <div
+                class="form bg-white px-5 xl:pl-[28px] pt-[80px] pb-8 rounded-[10px]"
+              >
+                <form action="">
+                  <div
+                    class="inputBox flex flex-col lg:flex-row gap-14 mb-[40px]"
+                  >
+                    <h4 class="text-dark8 font-[Roboto] text-[20px] font-bold">
+                      Primary
+                    </h4>
+                    <div class="inpitLine flex flex-wrap gap-y-6 gap-x-16">
+                      <div class="inputGroup flex flex-col">
+                        <label
+                          for="Number"
+                          class="text-dark8 font-[Roboto] text-[14px] font-bold"
+                          >Insurance Name</label
+                        >
+                        <input
+                          class="border rounded-md text-dark8 font-[Roboto] text-[16px] font-medium px-2 py-2 capitalize min-w-[260px]"
+                          type="text"
+                          placeholder="write here"
+                        />
+                      </div>
+                      <div class="inputGroup flex flex-col">
+                        <label
+                          for="Number"
+                          class="text-dark8 font-[Roboto] text-[14px] font-bold"
+                          >Insurance Id</label
+                        >
+                        <input
+                          class="border rounded-md text-dark8 font-[Roboto] text-[16px] font-medium px-2 py-2 capitalize min-w-[260px]"
+                          type="text"
+                          placeholder="write here"
+                        />
+                      </div>
+                      <div class="inputGroup flex flex-col">
+                        <label
+                          for="Number"
+                          class="text-dark8 font-[Roboto] text-[14px] font-bold"
+                          >Insurance Phone Number</label
+                        >
+                        <input
+                          class="border rounded-md text-dark8 font-[Roboto] text-[16px] font-medium px-2 py-2 capitalize min-w-[260px]"
+                          type="text"
+                          placeholder="write here"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="inputBox flex flex-col lg:flex-row gap-8">
+                    <h4 class="text-dark8 font-[Roboto] text-[20px] font-bold">
+                      Secondary
+                    </h4>
+                    <div class="inpitLine flex flex-wrap gap-y-6 gap-x-16">
+                      <div class="inputGroup flex flex-col">
+                        <label
+                          for="Number"
+                          class="text-dark8 font-[Roboto] text-[14px] font-bold"
+                          >Insurance Name</label
+                        >
+                        <input
+                          class="border rounded-md text-dark8 font-[Roboto] text-[16px] font-medium px-2 py-2 capitalize min-w-[260px]"
+                          type="text"
+                          placeholder="write here"
+                        />
+                      </div>
+                      <div class="inputGroup flex flex-col">
+                        <label
+                          for="Number"
+                          class="text-dark8 font-[Roboto] text-[14px] font-bold"
+                          >Insurance Id</label
+                        >
+                        <input
+                          class="border rounded-md text-dark8 font-[Roboto] text-[16px] font-medium px-2 py-2 capitalize min-w-[260px]"
+                          type="text"
+                          placeholder="write here"
+                        />
+                      </div>
+                      <div class="inputGroup flex flex-col">
+                        <label
+                          for="Number"
+                          class="text-dark8 font-[Roboto] text-[14px] font-bold"
+                          >Insurance Phone Number</label
+                        >
+                        <input
+                          class="border rounded-md text-dark8 font-[Roboto] text-[16px] font-medium px-2 py-2 capitalize min-w-[260px]"
+                          type="text"
+                          placeholder="write here"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="flex items-center flex-wrap gap-4 mt-[46px]">
+                    <h5
+                      class="text-[14px] font-[Roboto] font-bold leading-normal"
+                    >
+                      In the event of a denial, next level of review will be
+                      conducted.
+                    </h5>
+                    <!-- switchBtn  -->
+                    <div
+                      class="switchBtn flex items-center gap-2 bg-Blue p-[3px] rounded-full w-fit"
+                    >
+                      <span
+                        class="inline-block min-w-[24px] h-6 rounded-full bg-grayTrp cursor-pointer"
+                      ></span>
+                      <span
+                        class="inline-block min-w-[24px] h-6 rounded-full bg-white cursor-pointer"
+                      ></span>
+                    </div>
+                  </div>
+                  <!-- UserSubmitBtn  -->
+                  <div class="btn opacity-80 hover:opacity-100 transition-all">
+                    <button
+                      type="submit"
+                      class="px-6 py-[6px] mt-[40px] bg-dpBlue flex items-center gap-2 text-[20px] font-[Nunito] font-semibold text-white rounded-lg"
+                    >
+                      Submit
+                      <img src="./assets/Images/userSubmitBtn.png" alt="btn" />
+                    </button>
+                  </div>
+                </form>
+              </div>
+            </div>
           </div>
         </div>
-        <div
-          class="canvasBody hidden fixed left-0 top-0 right-0 w-full h-full bg-darkTrp transition-all z-[99]"
-        ></div>
-        <div
-          class="rCanvas pt-[60px] pb-[70px] pl-[60px] pr-[45px] py-8 bg-white shadow-md w-full md:w-[600px] h-[100vh] fixed -right-full top-0 z-[999] transition-all"
-        >
-          <span class="closePatient border py-3 block text-center">Back</span>
-          <h2 class="text-4xl text-dark font-semibold">Add New Patient</h2>
+
+        <!-- functionality  -->
+        <!-- 1. canvasBody  -->
+        <div>
+          <div
+            class="canvasBody hidden fixed left-0 top-0 right-0 w-full h-full bg-darkTrp transition-all z-[99]"
+          ></div>
+          <div
+            class="rCanvas pt-[60px] pb-[70px] pl-[60px] pr-[45px] py-8 bg-white shadow-md w-full md:w-[600px] h-[100vh] fixed -right-full top-0 z-[999] transition-all"
+          >
+            <span class="closePatient border py-3 block text-center">Back</span>
+            <h2 class="text-4xl text-dark font-semibold">Add New Patient</h2>
+          </div>
         </div>
       </section>
     </main>

@@ -59,4 +59,15 @@
   .toggler {
     right: 0 !important;
   }
+  /* System user  */
+  .uIcon_1,
+  .uIcon_2 {
+    width: 20px;
+  }
+  .userIconLi:hover .uIcon_1 {
+    display: none;
+  }
+  .userIconLi:hover .uIcon_2 {
+    display: block;
+  }
 }
